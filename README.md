@@ -1,4 +1,3 @@
-cd kali-mcp-server
 ## Kali-MCP-Server
 
 A Kali Linux MCP (Model Context Protocol) server built with Node.js for seamless integration with LLMs such as Claude or any MCP-compatible client. It provides common network security and penetration-testing tools (Nmap, Whois, Dig, Ping, Nikto, Hydra, SQLMap, and more) inside a Dockerized Kali Linux environment.
