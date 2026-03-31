@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\Dell\\OneDrive\\Desktop\\kali-mcp-server-main"
+      ]
+    },
+    "kali-mcp-server": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "--privileged",
+        "--cap-add=NET_ADMIN",
+        "--cap-add=NET_RAW",
+        "-v", "C:\\Users\\Dell\\OneDrive\\Desktop\\kali-mcp-server-main:/app",
+        "kali-mcp-server:latest",
+        "node",
+        "/app/server.js"
+      ]
+    }
+  }
+}
